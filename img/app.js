@@ -13,7 +13,7 @@ backToTopButton.addEventListener("click", function() {
     document.documentElement.scrollTop = 0; 
 });
 
-document.querySelectorAll('a').forEach(anchor => {
+document.querySelectorAll('li a').forEach(anchor => {
     anchor.addEventListener('click', function(e) {
         e.preventDefault();
 

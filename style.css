@@ -212,7 +212,6 @@ body {
     line-height: 30px;
     text-align: center;
     background-color: rgba(170, 137, 137, 0.5);
-    ;
     border-radius: 25em;
     padding: 1vh;
 
@@ -221,11 +220,11 @@ body {
 .project-btn-grp {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    grid-gap: 20px;
+    grid-gap: 1.5em;
 }
 
 .project-btn {
-    height: 40px;
+    height: 3em;
     text-transform: capitalize;
     padding: 1vh;
     font-size: 18px;
@@ -242,9 +241,8 @@ body {
     color: #4fa0ff;
 }
 
-/* about-section */
-
 .about-section {
+    margin-top: 2em;
     width: 100%;
     min-height: 20vh;
     margin: 0;
@@ -275,7 +273,7 @@ body {
 
 .about-info {
     color: #fff;
-    font-size: 30px;
+    font-size: 2em;
     line-height: 40px;
 }
 
@@ -511,7 +509,7 @@ body {
 footer {
     background-color: #333;
     color: #fff;
-    padding: 20px;
+    padding: 1.5em;
     text-align: center;
 }
 
@@ -533,15 +531,15 @@ footer {
     font-size: 1.5em;
     margin-left: 5vh 0;
     text-decoration: none;
-    padding: 20px;
+    padding: 1em;
 }
 
 .contact-info i a {
-    font-size: 1.2em;
+    font-size: 1em;
     margin-left: 5vh 0;
     text-decoration: none;
     color: white;
-    margin: 20px;
+    margin: 1.5em;
     transition: 0.5s ease
 }
 
@@ -582,13 +580,13 @@ footer {
     color: white;
     background: black;
     font-weight: 100;
-    font-size: 22PX;
-    width: 150px;
-    height:70px;
+    font-size: 20px;
+    width: 10em;
+    height:4em;
     border: none;
     cursor: pointer;
     transition: 0.5s;
-    border-radius: 4px;  
+    border-radius: 1em;  
     display: flex;
     justify-content: center;
     align-items: center;
@@ -632,41 +630,160 @@ footer {
 
     .project-section {
         width: 100%;
-        margin: 2vh;
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        gap: 10px;
-        padding: 5px;
+        min-height: 40vh;
+        padding: 2em;
+        top: 0;
+        transition: 1s;
+        margin-left: 0;
     }
-
+    
+    
+    .heading {
+        text-align: center;
+        font-size: 3em;
+        color: #ebdbdb;
+        text-transform: capitalize;
+        font-weight: 300;
+        margin-top: 2vh;
+        margin-bottom: 0;
+    }
+    
+    .card-detail {
+        font-size: 1em;
+    }
+    
     .project-heading {
-        font-size: 10px;
+        font-size: 2em;
+        background: #b3adad;
+        text-transform: capitalize;
+        text-align: center;
+        margin-bottom: 50px;
+        color: #1a1a1a;
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-stroke: 8px transparent;
     }
-
+    
+    .project-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 2.5em;
+    }
+    
     .project-card {
-        display: flex;
-        width: 50%;
-        height: auto;
+        width: 100%;
+        height: 35vh;
+        position: relative;
     }
-
+    
+    .project-card:hover {
+        transform: scale(1.1);
+        transition: .5s;
+    }
+    
+    .project-img {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        transition: .5s;
+    }
+    
+    .project-content {
+        position: relative;
+        padding: 40px;
+        color: #fff;
+        transition: .5s;
+    }
+    
+    .project-title {
+        font-size: 2em;
+        text-transform: capitalize;
+        text-align: center;
+        font-weight: 300;
+    
+    }
+    
+    .project-info {
+        margin: 40px;
+        font-size: 20px;
+        line-height: 30px;
+        text-align: center;
+        background-color: rgba(170, 137, 137, 0.5);
+        border-radius: 25em;
+        padding: 1vh;
+    
+    }
+    
     .project-btn-grp {
-        grid-template-columns: 1fr 1fr;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 1.5em;
+    }
+    
+    .project-btn {
+        height: 3em;
+        text-transform: capitalize;
+        padding: 1vh;
+        font-size: 18px;
+        border: none;
+        background: #000;
+        color: #fff;
+        cursor: pointer;
+        text-align: center;
+        text-decoration: none;
+        border-radius: 25em;
     }
 
 
     .about-section {
-        padding: 10px;
+        margin-top: 5em;
+        width: 100%;
+        min-height: 10vh;
+        transition: 1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: lightslategray;
+    }
+    
+    .about {
+        width: 100%;
+        padding: 0;
+        margin: 2em;
+        display: flex;
+        justify-content: center;
+    }
+    
+    .about-header {
+        color: #fff;
+        font-size: 2em;
+        text-transform: capitalize;
+        font-weight: 250;
+        justify-content: center;
+        display: flex;
+    }
+    
+    
+    .about-info {
+        color: #fff;
+        font-size: 0.5em;
+        line-height: 1em;
+        display: block;
     }
 
-
     .skill-section {
-        margin: 10px;
+        margin: 1em;
         display: grid;
-        grid-template-columns: 3fr;
+        grid-template-columns: 2fr;
     }
 
     .skills-container {
-        grid-template-columns: 1fr;
+        display: grid;
+        grid-template-columns: 3fr;
+        gap: 0;
     }
 
 
@@ -681,6 +798,52 @@ footer {
 
     .about-info {
         font-size: 20px;
+    }
+
+    .contact-info {
+        width: 100%;
+        margin: 1vh auto;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    
+    .contact-info h2 {
+        font-size: 1em;
+        margin-bottom: 1em;
+        grid-column: span 2;
+    }
+    
+    .contact-info i {
+        font-size: 1em;
+        text-decoration: none;
+        padding: 0.5em;
+    }
+    
+    .contact-info i a {
+        font-size: 1em;
+        margin-left: 3vh 0;
+        text-decoration: none;
+        color: white;
+        margin: 0.5em;
+        transition: 0.5s ease
+    }
+
+    .dw-btn {
+        text-decoration: none;
+        color: white;
+        background: black;
+        font-weight: 100;
+        font-size: 1em;
+        width: 10em;
+        height: 5em;
+        border: none;
+        transition: 0.5s;
+        border-radius: 1em;  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin:auto;
+        margin-top: 2em;
     }
 
 }
